@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploromia-contact</title>
+  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="img/logo.ico">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="#.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <form action="contact.php" method="post">
+    <main>
+        <section class="contact-section">
+          <div class="contact-content">
+            <h1>Get in Touch</h1>
+            <p>Have a question or want to learn more about Exploromia? Feel free to reach out to us!</p>
+            <div class="contact-form">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Shashemene, Oromia, Ethiopia</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@exploromia.com</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+251 906 377 509 / +251 935 520 021</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    
+  </form> 
+  <footer class="exploromia-footer">
+    <div class="exploromia-footer-content">
+      <div class="exploromia-footer-section exploromia-logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Exploromia Logo" class="footer-logo">
+        </a>
+      </div>
+      <div class="exploromia-footer-section exploromia-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="exploromia-footer-section exploromia-social">
+        <h3>Follow Us</h3>
+        <ul class="exploromia-footer-social">
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <li><a href="https://www.youtube.com/@exploromia"><ion-icon name="logo-youtube"></ion-icon></a></li> 
+          <li><a href="exploromia@gmail.com"><ion-icon name="logo-google"></ion-icon></a></li>
+          <li> <a href="https://x.com/exploromia"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li> <a href="https://www.instagram.com/Exploromia/"><ion-icon name="logo-facebook"></ion-icon></a></li> 
+          </ul>
+      </div>
+    </div>
+    <div class="exploromia-footer-bottom">
+      <p>&copy; 2024 Exploromia. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  <style>
+    .exploromia-footer {
+      background-color: #333;
+      padding: 40px 20px;
+      color: #ccc;
+      font-size: 14px;
+    }
+  
+    .exploromia-footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .exploromia-footer-section {
+      flex: 1 1 300px;
+      margin-bottom: 30px;
+    }
+  
+    .exploromia-logo {
+      text-align: center;
+    }
+  
+    .footer-logo {
+      max-width: 200px;
+      height: auto;
+    }
+  
+    .exploromia-links ul,
+    .exploromia-social ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .exploromia-links ul li,
+    .exploromia-social ul li {
+      margin: 0 15px;
+    }
+  
+    .exploromia-links ul li a,
+    .exploromia-social ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  
+    .exploromia-links ul li a:hover,
+    .exploromia-social ul li a:hover {
+      color: #fff;
+    }
+  
+    .exploromia-social h3 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .exploromia-footer-social li a {
+      color: #ccc;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+  
+    .exploromia-footer-social li a:hover {
+      color: #fff;
+    }
+  
+    .exploromia-footer-bottom {
+      text-align: center;
+      border-top: 1px solid #555;
+      padding-top: 20px;
+      font-size: 12px;
+    }
+  
+    @media (max-width: 768px) {
+      .exploromia-footer-content {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .exploromia-footer-section {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
+
+  <script src="script.js"></script>
+</body>
+</html>
